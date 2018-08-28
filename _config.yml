@@ -54,5 +54,5 @@ plugins:
   - jekyll-paginate
 
 # Polyverse Demo
-pwkurl: https://demo.polyverse.io
+pwkurl: http://play.polyverse.io
 
