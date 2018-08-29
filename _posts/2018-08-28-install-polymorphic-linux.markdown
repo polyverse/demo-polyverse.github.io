@@ -18,7 +18,7 @@ of Polymorphic Linux, and rescrambling all packages on an installed system.
 ### Let's with a Linux host
 On the right you should see one terminal window, running a fully functional Alpine. 
 
-It is running on our [Play-with-Polyverse](http://play.polyverse.io) infrastructure.
+It is running on our [Play-with-Polyverse](https://play.polyverse.io) infrastructure.
 
 Let's run a command to verify it's the right version.
  
