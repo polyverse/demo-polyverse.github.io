@@ -48,9 +48,9 @@ That was surprisingly simple, huh? What did it do really? You can always
 open up the install script, or you can view the contents of
 `/etc/apk/repositories` to see what's changed:
  
-    ```.term1
-    cat /etc/apk/repositories 
-    ```
+  ```.term1
+  cat /etc/apk/repositories 
+  ```
  
  There's new repositories in there. These are Polymorphic, and provide
  all the benefits of advanced scrambling without having to do anything new.    
@@ -60,26 +60,26 @@ open up the install script, or you can view the contents of
 So... what happens next? You use Linux as you would, and our repos take care
 of the rest. Let's try it. Why don't we install Apache?
 
-    ```.term1
-    apk update && apk add apache2 
-    ```
+  ```.term1 
+  apk update && apk add apache2 
+  ```
 
 ### How do we know it worked?
 
 We can query the Alpine Package Manager's policy, of course!
 
-    ```.term1
-    apk policy apache2
-    ```
+  ```.term1 
+  apk policy apache2
+  ```
 
 ### That was easy. Can we rescramble the ENTIRE OS?
 
 We sure can! Sometimes, the commands are complex, but we provide
 distribution-specific examples in our documentation.
 
-    ```.term1
-    sed -n -i '/repo.polyverse.io/p' /etc/apk/repositories && apk upgrade --update-cache --available
-    ```
+  ```.term1 
+  sed -n -i '/repo.polyverse.io/p' /etc/apk/repositories && apk upgrade --update-cache --available
+  ```
 
 
 ### That's all there is to it!
