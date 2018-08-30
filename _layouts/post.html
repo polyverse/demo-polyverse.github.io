@@ -59,11 +59,11 @@ layout: default
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="https://rawgit.com/RickStrahl/jquery-resizable/master/dist/jquery-resizable.min.js"></script>
-<script src="https://cdn.rawgit.com/play-with-docker/sdk/master/dist/pwd.js"></script>
+<script src="https://cdn.rawgit.com/polyverse/play-with-polyverse-sdk/5a359c43/dist/pwd.js"></script>
 <script src="{{site.baseurl}}/js/quiz.js"></script>
 <script>
     var siteUrl = "{{ site.url }}"
-      {% if site.url == 'http://training.play-with-docker.com' %}
+      {% if site.url == 'http://play.polyverse.io' %}
       if ((window.location.protocol + '//' + window.location.hostname) == siteUrl) {
       pwd.on('init', function() {
       pwd.getUserInfo(function(pwduser){
